@@ -1,0 +1,62 @@
+h1{
+ color: rebeccapurple;font-size: 40px; background-color: green;
+}
+h2{color: rgb(160, 69, 252);font-size: 35px; background-color: rgb(118, 240, 118);
+}
+h3{color: rgb(66, 34, 99);font-size: 35px; background-color: rgb(106, 193, 233);
+}
+/* how css wrork. 1 selctor  2 property 3 value */
+/* we seperate and use {}follow after selector. 2 : follow after property. ; follow after vlaue.  */
+li{ text-decoration: none;
+font-size: large;
+background-color: hotpink;
+border-spacing: 5px;
+margin: 7px;
+line-break: loose;
+transform: skew(15%);}
+a{ text-decoration: none;
+font-size: large;
+background-color: hotpink;
+border-spacing: 5px;
+margin: 7px;
+line-break: loose;
+transform: skew(15%);
+letter-spacing: 4px;}
+
+p{color: brown;font-size: medium;}
+#2p{background-color: rgb(7, 23, 53);color: cornflowerblue;}
+div{
+ width: 50vh; background-color: green;
+ transition-property: background, boarder radius;
+ transition-duration: 4s, 2s;
+ border: 10px coral;
+
+}
+div:hover{
+ background: rgb(177, 247, 177);
+ border-radius: 50%;
+ 
+}
+h2, h3, h4{background: turquoise;opacity: 1;
+ animation: move 5s 3;
+ animation-fill-mode: none;
+}
+@keyframes move{
+ 0%{opacity: 0.1;}
+ 25%{
+  opacity: 0.25;
+  transform: translateX(200px);
+ }
+ 50%{
+  opacity: 0.5;
+  transform: translateX(-100px);
+ }
+ 75%{
+  opacity: 0.75;
+  transform: translateX(75px);
+ }
+ 100%{
+  opacity: 1;
+  transform: translateX(-10px);
+ }
+}
